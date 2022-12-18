@@ -32,7 +32,7 @@ MQUnifiedsensor MQ5(placa, Voltage_Resolution, ADC_Bit_Resolution, pinMQ5, "MQ-5
 MQUnifiedsensor MQ135(placa, Voltage_Resolution, ADC_Bit_Resolution, pinMQ135, "MQ-135");
 
 // ** all data
-bool  isCalibration = true;
+bool  isCalibration = false;
 float  getMQ2_H2, getMQ2_LPG, getMQ2_CO, getMQ2_Alcohol, getMQ2_Propane;
 float  getMQ5_H2, getMQ5_LPG, getMQ5_CH4, getMQ5_CO, getMQ5_Alcohol;
 float  getMQ135_CO, getMQ135_Alcohol, getMQ135_CO2, getMQ135_Toluen, getMQ135_NH4, getMQ135_Aceton;
@@ -157,9 +157,9 @@ void MQ_setup(){
     MQ135_Calibration();
   }
   else {
-   MQ2.setR0(2.68);
-   MQ5.setR0(9.32);
-   MQ135.setR0(5.97);
+   MQ2.setR0(3.07);
+   MQ5.setR0(4.31);
+   MQ135.setR0(6.43);
   }
 }
 void MQ2_Calibration() {
