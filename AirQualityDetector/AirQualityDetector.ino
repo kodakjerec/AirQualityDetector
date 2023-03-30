@@ -23,8 +23,8 @@ AmebaST7735 tft = AmebaST7735(TFT_CS, TFT_DC, TFT_RST);
 
 // WiFi
 //SSID e senha da rede wifi para o ESP se conectar
-char ssid[] = "kodakjerecHTC";
-char pass[] = "xj4su6u83";
+char ssid[] = "";
+char pass[] = "";
 int status = WL_IDLE_STATUS;  // the Wifi radio's status
 
 
